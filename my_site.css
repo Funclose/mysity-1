@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+.header{
+    height: 10%;
+    width: 100%;
+    background-color: aqua;
+}
+header {
+    background-color: #333; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 20px; /* Внутренний отступ */
+    text-align: center; /* Выравнивание по центру */
+    display: flex; /* Используем flexbox */
+    justify-content: space-between; /* Равномерное распределение элементов по горизонтали */
+    align-items: center; /* Выравнивание элементов по вертикали */
+}
+.logo {
+    font-size: 24px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+}
+nav a {
+    color: #fff; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    margin: 0 10px;/
+}
+.first_content{
+    display: flex;
+    width: 85%;
+    height: 30%;
+    margin: 4% auto;
+}
+.first{
+    width: 100%;
+    flex: 1;
+}
+.second{
+    margin-left: -10%;
+    border: 1px solid gray;
+    padding: 4% ;
+    flex: 1;
+    border-right-color: transparent; 
+    border-bottom-color: transparent;
+    
+}
+img{
+    width: 80.5%;
+    height: 100%;
+}
+.second_container{
+    display: flex;
+    width: 85%;
+    height: 30%;
+    margin: -4% auto;
+}
+.second_cont{
+    flex: 1;
+    border: 1px solid gray;
+    padding: 4%;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+.first_cont{
+    flex: 1;
+    margin-right: -10%;
+}
+.mr{
+    margin: 20px;
+    text-align: center;
+}
+.butons{
+    display: flex;
+    margin: auto;
+
+}
+input[type="text"], input[type="password"] {
+    margin-bottom: 10px; /* Расстояние между текстовыми полями */
+    padding: 5px; /* Внутренний отступ текстового поля */
+    font-size: 14px; /* Размер текста ввода */
+    
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Добавляем центрирование по вертикали */
+    height: 20vh; /* Занимаем всю высоту видимой области */
+}
+.radio {
+    display: flex;
+    text-align: center; /* Центрирование текста */
+    margin-left: 0%;
+
+}
+input[type="radio"]  {
+    margin-right: 20px; /* Отступ справа между элементами */
+}
+.lel{
+    font-size: 18px;
+    
+}
+.topic{
+    margin-left: -30%;
+    text-align: center;
+}
+
+
+
+/* start contact */
+.container1 {
+    max-width: 600px;
+    margin: 2% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056
+}
+    /* end contact*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца */
+    grid-template-rows: repeat(3, 150px); /* Три строки по 200px */
+    gap: 20px; /* Пространство между ячейками */
+    background-color:wheat;
+    
+}
+      
+.grid-item.icon{
+    position: relative;
+}
+.grid-item{
+    margin: 1px;
+}
+.cont_for_grid{
+     background-color: lightgray; 
+    width: 85%;
+    margin:4% auto;
+}
+.icon img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    padding-left: 1%;
+}
+.icon p{
+    position: absolute;
+    bottom: 10px; /* Регулируйте положение текста здесь */
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 5%;
+    font-family: Arial, sans-serif;
+}
+
+         /* окно */
+@media screen and (min-width: 601px) and (max-width: 850px) {
+    .first_content{
+        display: flex;
+        width: 60%;
+        height: 30%;
+        margin: 4% auto;
+    }
+    .first_content img{
+        margin-left: -15%;
+        width: 90%;
+        height: 100%;
+    }
+    .second{
+    font-size: 15px;
+    height: 30%;
+    margin-left: -13%;
+    border: 1px solid gray;
+    padding: 4% ;
+    
+    border-right-color: transparent; 
+    border-bottom-color: transparent;
+    }
+    .container1 {
+        max-width: 400px;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .cont_for_grid{
+       background-color: lightgray; 
+       width: 73%;
+       margin:4% auto;
+       
+    }
+    .grid-item .icon img{
+        width: 100%;
+        height: 100%;
+    }
+    .grid-item{
+        height: 400px;
+    }
+    .grid-container{
+        padding-top: 0%;
+        height: 55vh;
+    }
+    .grid-item p{
+    height: 80%;
+    }
+    .second_container{
+        width: 69%;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container1{
+        width: 70%;
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column; /* Располагаем элементы в колонку */
+        align-items: center;
+      }
+      .grid-item {
+        height: 200px;
+        
+      }
+      
+      .grid-item p{
+        height: 55%;
+      }
+        
+      
+}
